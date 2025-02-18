@@ -1,0 +1,25 @@
+{
+  "name": "eviews-syntax",
+  "displayName": "Eviews Syntax",
+  "description": "Provides Eviews Syntax highlights for VSCode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "prg",
+      "aliases": ["Eviews", "prg"],
+      "extensions": [".prg"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "prg",
+      "scopeName": "source.prg",
+      "path": "./syntaxes/prg.tmLanguage.json"
+    }]
+  }
+}
