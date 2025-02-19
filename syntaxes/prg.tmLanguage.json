@@ -6,7 +6,6 @@
 		{ "include": "#functions" },
 		{ "include": "#operators" },
 		{ "include": "#strings" },
-		{ "include": "#comments" },
 		{ "include": "#subroutines" },
 		{ "include": "#objects" },
 		{ "include": "#variables" }
@@ -33,11 +32,6 @@
 			"end": "\"",
 			"patterns": [
 				{ "name": "constant.character.escape.eviews", "match": "\\\\." }
-			]
-		},
-		"comments": {
-			"patterns": [
-				{ "name": "comment.line.eviews", "match": "'.*", "captures": { "0": { "name": "comment.line.eviews", "foreground": "#808080" } } }
 			]
 		},
 		"subroutines": {
