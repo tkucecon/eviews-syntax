@@ -11,14 +11,14 @@
   ],
   "contributes": {
     "languages": [{
-      "id": "prg",
-      "aliases": ["Eviews", "prg"],
+      "id": "eviews",
+      "aliases": ["PRG", "prg"],
       "extensions": [".prg"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "prg",
-      "scopeName": "source.prg",
+      "language": "eviews",
+      "scopeName": "source.eviews",
       "path": "./syntaxes/prg.tmLanguage.json"
     }]
   }
