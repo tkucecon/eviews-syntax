@@ -14,12 +14,12 @@
 	"repository": {
 		"keywords": {
 			"patterns": [
-				{ "name": "keyword.control.flow.eviews", "match": "\\b(if|while|for|return)\\b" }
+				{ "name": "keyword.control.flow.eviews", "match": "\\b(if|then|else|endif|while|for|next|return|subroutine|endsub)\\b" }
 			]
 		},
 		"objects": {
 			"patterns": [
-				{ "name": "constant.language.eviews", "match": "\\b(alpha|coef|equation|factor|frml|genr|graph|group|link|logl|matrix|model|pool|rowvector|sample|scalar|series|spool|sspace|string|svector|sym|system|table|text|valmap|var|vector)\\b" }
+				{ "name": "constant.language.eviews", "match": "(?i)\\b(alpha|coef|equation|factor|frml|genr|graph|group|link|logl|matrix|model|pool|rowvector|sample|scalar|series|spool|sspace|string|svector|sym|system|table|text|valmap|var|vector)\\b" }
 			]
 		},
 		"commands": {
@@ -35,37 +35,37 @@
 		},
 		"commands.global": {
 			"patterns": [
-				{ "name": "keyword.command.global.eviews", "match": "\\b(do|freeze|preview|print|show|cd|exit|output|param|rndseed|smpl)\\b" }
+				{ "name": "keyword.command.global.eviews", "match": "(?i)\\b(do|freeze|preview|print|show|cd|exit|output|param|rndseed|smpl)\\b" }
 			]
 		},
 		"commands.data": {
 			"patterns": [
-				{ "name": "keyword.command.data.eviews", "match": "\\b(ccopy|cfetch|clabel|close|copy|db|dbcopy|dbcreate|dbdelete|dbopen|dbpack|dbrebuild|dbername|drconvert|expand|fetch|hconvert|hfetch|hlabel|import|load|logclear|logmode|logmsg|logsave|open|pageappend|pagecontract|pagecopy|pagecreate|pagedelete|pageload|pagerefresh|pagerename|pagesave|pageselect|pagesort|pagestack|pagestruct|pageunlink|pageunstack|range|read|save|sort|store|unlink|wfclose|wfcreate|wfopen|wforder|wfrefresh|wfsave|wfselect|wfsnapshot|wfstats|wfunlink|wfuse|workfile|write)\\b" }
+				{ "name": "keyword.command.data.eviews", "match": "(?i)\\b(ccopy|cfetch|clabel|close|copy|db|dbcopy|dbcreate|dbdelete|dbopen|dbpack|dbrebuild|dbername|drconvert|expand|fetch|hconvert|hfetch|hlabel|import|load|logclear|logmode|logmsg|logsave|open|pageappend|pagecontract|pagecopy|pagecreate|pagedelete|pageload|pagerefresh|pagerename|pagesave|pageselect|pagesort|pagestack|pagestruct|pageunlink|pageunstack|range|read|save|sort|store|unlink|wfclose|wfcreate|wfopen|wforder|wfrefresh|wfsave|wfselect|wfsnapshot|wfstats|wfunlink|wfuse|workfile|write)\\b" }
 			]
 		},
 		"commands.graphs": {
 			"patterns": [
-				{ "name": "keyword.command.graph.eviews", "match": "\\b(area|band|bar|boxplot|bubble|bubbletrip|distplot|dot|errbar|hilo|line|pie|qqplot|scat|scatmat|scatpair|seasplot|spike|xyarea|xybar|xyline|xypair)\\b|(?<=\\.)\\b(area|band|bar|boxplot|bubble|bubbletrip|distplot|dot|errbar|hilo|line|pie|qqplot|scat|scatmat|scatpair|seasplot|spike|xyarea|xybar|xyline|xypair)\\b" }
+				{ "name": "keyword.command.graph.eviews", "match": "(?i)\\b(area|band|bar|boxplot|bubble|bubbletrip|distplot|dot|errbar|hilo|line|pie|qqplot|scat|scatmat|scatpair|seasplot|spike|xyarea|xybar|xyline|xypair)\\b|(?<=\\.)\\b(area|band|bar|boxplot|bubble|bubbletrip|distplot|dot|errbar|hilo|line|pie|qqplot|scat|scatmat|scatpair|seasplot|spike|xyarea|xybar|xyline|xypair)\\b" }
 			]
 		},
 		"commands.utility": {
 			"patterns": [
-				{ "name": "keyword.command.utility.eviews", "match": "\\b(close|copy|delete|rename)\\b" }
+				{ "name": "keyword.command.utility.eviews", "match": "(?i)\\b(close|copy|delete|rename)\\b" }
 			]
 		},
 		"commands.program": {
 			"patterns": [
-				{ "name": "keyword.command.program.eviews", "match": "\\b(addin|adduo|commandcap|exec|logclear|logclose|logmode|logmsg|logsave|open|output|poff|pon|program|run|spawn|statusline|tic|toc)\\b" }
+				{ "name": "keyword.command.program.eviews", "match": "(?i)\\b(addin|adduo|commandcap|exec|logclear|logclose|logmode|logmsg|logsave|open|output|poff|pon|program|run|spawn|statusline|tic|toc)\\b" }
 			]
 		},
 		"commands.interface": {
 			"patterns": [
-				{ "name": "keyword.command.interface.eviews", "match": "\\b(xclose|xget|xlog|xoff|xon|xopen|xpackage|xput|xrun)\\b" }
+				{ "name": "keyword.command.interface.eviews", "match": "(?i)\\b(xclose|xget|xlog|xoff|xon|xopen|xpackage|xput|xrun)\\b" }
 			]
 		},
 		"commands.interactive": {
 			"patterns": [
-				{ "name": "keyword.command.interactive.eviews", "match": "\\b(arch|archtest|auto|binary|cause|censored|chow|coint|cointeg|cor|count|cov|cross|facbreak|factest|fit|forecast|glm|gmm|hist|hpf|liml|logit|ls|midas|ordered|probit|qreg|reset|seas|smooth|solve|stats|stepls|testadd|testdrop|tsls|uroot|varest)\\b|(?<=\\.)\\b(arch|archtest|auto|binary|cause|censored|chow|coint|cointeg|cor|count|cov|cross|facbreak|factest|fit|forecast|glm|gmm|hist|hpf|liml|logit|ls|midas|ordered|probit|qreg|reset|seas|smooth|solve|stats|stepls|testadd|testdrop|tsls|uroot|varest)\\b" }
+				{ "name": "keyword.command.interactive.eviews", "match": "(?i)\\b(arch|archtest|auto|binary|cause|censored|chow|coint|cointeg|cor|count|cov|cross|facbreak|factest|fit|forecast|glm|gmm|hist|hpf|liml|logit|ls|midas|ordered|probit|qreg|reset|seas|smooth|solve|stats|stepls|testadd|testdrop|tsls|uroot|varest)\\b|(?<=\\.)\\b(arch|archtest|auto|binary|cause|censored|chow|coint|cointeg|cor|count|cov|cross|facbreak|factest|fit|forecast|glm|gmm|hist|hpf|liml|logit|ls|midas|ordered|probit|qreg|reset|seas|smooth|solve|stats|stepls|testadd|testdrop|tsls|uroot|varest)\\b" }
 			]
 		},
 		"functions": {
@@ -94,7 +94,7 @@
 		},
 		"functions.numeric": {
 			"patterns": [
-				{ "name": "support.function.numeric.eviews", "match": "\\b(@(abs|bounds||ceiling|exp|expm1|fact|factlog|floor|iff|inv|mod|log|log1p|log1mexp|logx|nan|pmax|pmin|pow|powm1|pow1pm1|recode|round|sign|sqrt))\\b" }
+				{ "name": "support.function.numeric.eviews", "match": "(?i)@(abs|bounds|ceiling|exp|expm1|fact|factlog|floor|iff|inv|mod|log|log1p|log1mexp|logx|nan|pmax|pmin|pow|powm1|pow1pm1|recode|round|sign|sqrt)" }
 			]
 		},
 		"functions.timeseries": {
@@ -104,57 +104,57 @@
 		},
 		"functions.financial": {
 			"patterns": [
-				{ "name": "support.function.financial.eviews", "match": "\\b(@(fv|nper|pv|pmt|rate))\\b" }
+				{ "name": "support.function.financial.eviews", "match": "@(fv|nper|pv|pmt|rate)" }
 			]
 		},
 		"functions.description": {
 			"patterns": [
-				{ "name": "support.function.description.eviews", "match": "\\b(@(cor|cov|covp|covs|gmean|hmean|imax|imin|inner|kurt|mae|mape|max|mean|median|min|nas|prod|obs|quantile|rank|rmse|skew|smape|stdev|stdevp|stdevs|sum|sumsq|theil|var|varp|vars))\\b" }
+				{ "name": "support.function.description.eviews", "match": "@(cor|cov|covp|covs|gmean|hmean|imax|imin|inner|kurt|mae|mape|max|mean|median|min|nas|prod|obs|quantile|rank|rmse|skew|smape|stdev|stdevp|stdevs|sum|sumsq|theil|var|varp|vars)" }
 			]
 		},
 		"functions.stat": {
 			"patterns": [
-				{ "name": "support.function.stat.eviews", "match": "\\b(@(cumsum|cumprod|cummean|cumstdev|cumstdevp|cumstdevs|cumvar|cumvarp|cumvars|cummax|cummin|cumsumsq|cumobs|cumnas|cumquantile|cummedian|cumbsum|cumbprod|cumbmean|cumbstdev|cumbstdevp|cumbstdevs|cumvar|cumvarp|cumvars|cumbmax|cumbmin|cumbnas|movsum|movav|movavc|movstdev|movstdevs|movstdevp|movvar|movvars|movvarp|movcov|movcovs|movcovp|movcor|movmax|movmin|movsumsq|movskew|movkurt|movobs|movnas|movinner|msum|mav|mavc|mstdev|mstdevs|mstdevp|mvar|mvars|mvarp|mcov|mcovs|mcovp|mcor|mmax|mmin|msumsq|mskew|mkurt|mobs|mnas|minner))\\b" }
+				{ "name": "support.function.stat.eviews", "match": "@(cumsum|cumprod|cummean|cumstdev|cumstdevp|cumstdevs|cumvar|cumvarp|cumvars|cummax|cummin|cumsumsq|cumobs|cumnas|cumquantile|cummedian|cumbsum|cumbprod|cumbmean|cumbstdev|cumbstdevp|cumbstdevs|cumvar|cumvarp|cumvars|cumbmax|cumbmin|cumbnas|movsum|movav|movavc|movstdev|movstdevs|movstdevp|movvar|movvars|movvarp|movcov|movcovs|movcovp|movcor|movmax|movmin|movsumsq|movskew|movkurt|movobs|movnas|movinner|msum|mav|mavc|mstdev|mstdevs|mstdevp|mvar|mvars|mvarp|mcov|mcovs|mcovp|mcor|mmax|mmin|msumsq|mskew|mkurt|mobs|mnas|minner)" }
 			]
 		},
 		"functions.column": {
 			"patterns": [
-				{ "name": "support.function.column.eviews", "match": "\\b(@(columns|rnas|robs|rvalcount|rsum|rmean|rmedian|rprod|rquantile|rstdev|rstdevp|rstdevs|rvar|rvarp|rvars|rsumsq|rfirst|rifirst|rilast|rimin|rlast|rmax|rmin))\\b" }
+				{ "name": "support.function.column.eviews", "match": "@(columns|rnas|robs|rvalcount|rsum|rmean|rmedian|rprod|rquantile|rstdev|rstdevp|rstdevs|rvar|rvarp|rvars|rsumsq|rfirst|rifirst|rilast|rimin|rlast|rmax|rmin)" }
 			]
 		},
 		"functions.group": {
 			"patterns": [
-				{ "name": "support.function.group.eviews", "match": "\\b(@(obsby|nasby|sumsby|meansby|minsby|maxsby|mediansby|varsby|varssby|varpsby|stdevssby|stdevpsby|sumsqsby|quantilesby|skewsby|kurtsby|firstsby|lastsby))\\b" }
+				{ "name": "support.function.group.eviews", "match": "@(obsby|nasby|sumsby|meansby|minsby|maxsby|mediansby|varsby|varssby|varpsby|stdevssby|stdevpsby|sumsqsby|quantilesby|skewsby|kurtsby|firstsby|lastsby)" }
 			]
 		},
 		"functions.special": {
 			"patterns": [
-				{ "name": "support.function.special.eviews", "match": "\\b(@(beta|betainc|betaincder|betaincinv|betalog|binom|binomlog|cloglog|digamma|psi|erf|erfc|gamma|gammader|gammainc|gammaincder|gammaincinv|gammalog|logit|trigamma|acos|asin|atan|cos|sin|tan))\\b" }
+				{ "name": "support.function.special.eviews", "match": "@(beta|betainc|betaincder|betaincinv|betalog|binom|binomlog|cloglog|digamma|psi|erf|erfc|gamma|gammader|gammainc|gammaincder|gammaincinv|gammalog|logit|trigamma|acos|asin|atan|cos|sin|tan)" }
 			]
 		},
 		"functions.string": {
 			"patterns": [
-				{ "name": "support.function.string.eviews", "match": "\\b(@(addquotes|asc|chr|datestr|dateval|dtoo|eqna|insert|instr|isempty|left|len|length|lower|ltrim|mid|neqna|replace|right|rinstr|rtirm|str|strippatterns|stripquotes|strlen|trim|upper|val|wcount|wcross|wdelim|wdrop|wfind|wfindnc|winterleave|wintersect|wkeep|wleft|wmid|wnotin|word|wordq|wreplace|wright|wsort|wsplit|wunion|wunique))\\b" }
+				{ "name": "support.function.string.eviews", "match": "@(addquotes|asc|chr|datestr|dateval|dtoo|eqna|insert|instr|isempty|left|len|length|lower|ltrim|mid|neqna|replace|right|rinstr|rtirm|str|strippatterns|stripquotes|strlen|trim|upper|val|wcount|wcross|wdelim|wdrop|wfind|wfindnc|winterleave|wintersect|wkeep|wleft|wmid|wnotin|word|wordq|wreplace|wright|wsort|wsplit|wunion|wunique)" }
 			]
 		},
 		"functions.date": {
 			"patterns": [
-				{ "name": "support.function.date.eviews", "match": "\\b(@(dateadd|datediff|dateceil|datefloor|datenext|datepart|datestr|dateeval|dtoo|makedate|now|otod|strdate|strnow))\\b" }
+				{ "name": "support.function.date.eviews", "match": "@(dateadd|datediff|dateceil|datefloor|datenext|datepart|datestr|dateeval|dtoo|makedate|now|otod|strdate|strnow)" }
 			]
 		},
 		"functions.indicator": {
 			"patterns": [
-				{ "name": "support.function.indicator.eviews", "match": "\\b(@(inlist|between))\\b" }
+				{ "name": "support.function.indicator.eviews", "match": "@(?:inlist|between)" }
 			]
 		},
 		"functions.workfile": {
 			"patterns": [
-				{ "name": "support.function.workfile.eviews", "match": "\\b(@(env|fileexist|tablenames|getnextname|vernum|verstr|elem|first|ifirst|ilast|last|obsrange|obssmpl|pagecount|pageexist|pagefreq|pagelist|pageids|pagename|pagesmpl|wfname|wfpath|after|before|date|day|during|enddate|event|holiday|hour|hourf|isperiod|minute|month|quarter|seas|second|strdate|trend|trendc|weekday|year|cellid|crossid|obsid|trend|trendc))\\b" }
+				{ "name": "support.function.workfile.eviews", "match": "@(env|fileexist|tablenames|getnextname|vernum|verstr|elem|first|ifirst|ilast|last|obsrange|obssmpl|pagecount|pageexist|pagefreq|pagelist|pageids|pagename|pagesmpl|wfname|wfpath|after|before|date|day|during|enddate|event|holiday|hour|hourf|isperiod|minute|month|quarter|seas|second|strdate|trend|trendc|weekday|year|cellid|crossid|obsid|trend|trendc)" }
 			]
 		},
 		"functions.valuemap": {
 			"patterns": [
-				{ "name": "support.function.valuemap.eviews", "match": "\\b(@(map|umap|unmaptxt))\\b" }
+				{ "name": "support.function.valuemap.eviews", "match": "@(map|umap|unmaptxt)" }
 			]
 		},
 		"functions.plain": {
@@ -172,12 +172,7 @@
 		},
 		"comments": {
 			"patterns": [
-				{ "name": "comment.line.eviews", "match": "'.*", "captures": { "0": { "name": "comment.line.eviews", "foreground": "#808080" } } }
-			]
-		},
-		"subroutines": {
-			"patterns": [
-				{ "name": "entity.name.function.eviews", "match": "\\bsubroutine\\s+([a-zA-Z_][a-zA-Z0-9_]*)", "captures": { "1": { "name": "entity.name.function.eviews" } } }
+				{ "name": "comment.line.eviews", "match": "'.*", "captures": { "0": { "name": "comment.line.eviews"} } }
 			]
 		},
 		"variables": {
